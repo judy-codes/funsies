@@ -1,20 +1,10 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  min-height: 100vh;
+  background-color: #f5f5f5;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,11 +18,181 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-content {
+  padding-top: 80px;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.chat-container {
+  padding: 2rem;
+  max-width: 800px;
+  width: 90%;
+}
+
+.chat-container h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.chat-container p {
+  color: #666;
+}
+
+/* Page Container Styles */
+.page-container {
+  padding: 2rem;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.page-container h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Experience Page Styles */
+.experience-item {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+}
+
+.experience-item h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.experience-item h3 {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.linkedin-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+.linkedin-section p {
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.linkedin-link {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #0077b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-link:hover {
+  background-color: #005582;
+}
+
+/* Projects Page Styles */
+.project-card {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-links {
+  margin-top: 1rem;
+}
+
+.project-links a {
+  margin-right: 1rem;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+/* Values Page Styles */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.value-card {
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.value-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Home Page Styles */
+.home-container {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.intro-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+.intro-section h1 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.intro-text {
+  color: #666;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.chat-container {
+  padding: 2rem;
+}
+
+.chat-container h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.chat-container p {
+  color: #666;
 }
