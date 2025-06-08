@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/funsies/static/css/main.5688ace1.css",
+    "main.js": "/funsies/static/js/main.1407a7a6.js",
+    "index.html": "/funsies/index.html",
+    "main.5688ace1.css.map": "/funsies/static/css/main.5688ace1.css.map",
+    "main.1407a7a6.js.map": "/funsies/static/js/main.1407a7a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5688ace1.css",
+    "static/js/main.1407a7a6.js"
+  ]
+}
