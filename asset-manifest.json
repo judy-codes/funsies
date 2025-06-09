@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/funsies/static/css/main.13ee96f9.css",
-    "main.js": "/funsies/static/js/main.08ebea7f.js",
+    "main.js": "/funsies/static/js/main.16e521ce.js",
     "index.html": "/funsies/index.html",
     "main.13ee96f9.css.map": "/funsies/static/css/main.13ee96f9.css.map",
-    "main.08ebea7f.js.map": "/funsies/static/js/main.08ebea7f.js.map"
+    "main.16e521ce.js.map": "/funsies/static/js/main.16e521ce.js.map"
   },
   "entrypoints": [
     "static/css/main.13ee96f9.css",
-    "static/js/main.08ebea7f.js"
+    "static/js/main.16e521ce.js"
   ]
 }
