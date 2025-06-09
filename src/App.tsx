@@ -10,7 +10,7 @@ import SocialIcons from './components/SocialIcons';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/funsies">
       <div className="App">
         <Navbar />
         <main className="main-content">
