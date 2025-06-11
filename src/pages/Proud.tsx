@@ -11,7 +11,7 @@ const Proud: React.FC = () => {
     {
       date: "February 2025",
       title: "Won Powerlifting Meet in Korea",
-      description: "Competed in Korea Iron Souls III powerlifting meet and won first place, achieving this while solo traveling and without prior preparation."
+      description: "Competed in Korea Iron Souls III powerlifting meet and won first place."
     },
     {
       date: "August 2024",
@@ -22,6 +22,11 @@ const Proud: React.FC = () => {
       date: "July 2023",
       title: "Started at Salesforce",
       description: "Joined Salesforce as an Associate Software Engineer, beginning my journey in enterprise software development."
+    },
+    {
+      date: "June 2023",
+      title: "Moved to San Francisco",
+      description: "Relocated to San Francisco to begin my career in technology, embracing new opportunities and experiences in the Bay Area."
     },
     {
       date: "May 2023",
