@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/funsies/static/css/main.a242b639.css",
-    "main.js": "/funsies/static/js/main.23f77ad4.js",
+    "main.css": "/funsies/static/css/main.18a3b9c1.css",
+    "main.js": "/funsies/static/js/main.f49ba072.js",
+    "static/media/powerlifting-korea.jpg": "/funsies/static/media/powerlifting-korea.53de827a7f3a8ee6143f.jpg",
+    "static/media/table-bostonian-beans.jpg": "/funsies/static/media/table-bostonian-beans.d4c7b963bd38e266c9dc.jpg",
+    "static/media/pottery-beach-glaze.jpg": "/funsies/static/media/pottery-beach-glaze.f54fbe176b4b0df92700.jpg",
     "index.html": "/funsies/index.html",
-    "main.a242b639.css.map": "/funsies/static/css/main.a242b639.css.map",
-    "main.23f77ad4.js.map": "/funsies/static/js/main.23f77ad4.js.map"
+    "main.18a3b9c1.css.map": "/funsies/static/css/main.18a3b9c1.css.map",
+    "main.f49ba072.js.map": "/funsies/static/js/main.f49ba072.js.map"
   },
   "entrypoints": [
-    "static/css/main.a242b639.css",
-    "static/js/main.23f77ad4.js"
+    "static/css/main.18a3b9c1.css",
+    "static/js/main.f49ba072.js"
   ]
 }
