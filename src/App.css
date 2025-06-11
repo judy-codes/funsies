@@ -64,36 +64,57 @@
 /* Experience Page Styles */
 .experience-layout {
   display: flex;
-  gap: 2rem;
+  gap: 0.25rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
   justify-content: center;
+  position: relative;
+  min-height: calc(100vh - 80px);
 }
 
 .filter-sidebar {
-  flex: 0 0 250px;
-  padding: 3rem 1rem 1rem 1rem;
-  position: sticky;
-  top: 100px;
-  height: fit-content;
+  flex: 0 0 220px;
+  padding: 0;
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-650px);
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  z-index: 10;
 }
 
 .filter-section {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0.5rem;
+}
+
+.filter-section:first-child {
+  padding-top: 1rem;
 }
 
 .filter-section h3 {
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.75rem 0;
   color: #333;
   font-size: 1.1rem;
-  padding-left: 0.5rem;
+  padding-left: 0.25rem;
+  position: sticky;
+  top: 0;
+  background-color: #f5f5f5;
+  padding: 0.25rem;
+  z-index: 1;
+  text-align: left;
 }
 
 .tag-filters {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.4rem;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 0.25rem;
 }
 
 .filter-tag {
@@ -102,9 +123,9 @@
   gap: 0.3rem;
   background-color: #f5f5f5;
   color: #666;
-  padding: 0.4rem 0.8rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 15px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   border: 1px solid #e0e0e0;
   cursor: pointer;
@@ -174,31 +195,32 @@
 }
 
 .experience-container {
-  flex: 0 0 1000px;
+  flex: 0 0 900px;
+  margin-left: 220px;
+  padding: 0;
 }
 
 .experience-item {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .experience-item:last-child {
   margin-bottom: 0;
 }
 
-.experience-image {
-  flex: 0 0 120px;
-}
-
-.experience-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
 .experience-content {
-  flex: 1;
+  width: 100%;
+}
+
+.experience-content h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
 .experience-content h2 {
@@ -207,16 +229,11 @@
   font-size: 1.5rem;
 }
 
-.experience-content h3 {
-  margin: 0 0 0.5rem 0;
-  color: #666;
-  font-size: 1.2rem;
-}
-
 .experience-content .period {
   color: #888;
   font-size: 0.9rem;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .experience-content .description {
@@ -224,6 +241,7 @@
   line-height: 1.6;
   margin: 0;
   white-space: pre-line;
+  text-align: left;
 }
 
 .experience-item h3 {
@@ -241,11 +259,22 @@
   .filter-sidebar {
     position: static;
     width: 100%;
-    max-width: 1000px;
+    max-width: 900px;
+    transform: none;
+    height: auto;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+  }
+
+  .experience-container {
+    margin-left: 0;
+    width: 100%;
+    max-width: 900px;
   }
 
   .tag-filters, .active-tags {
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
@@ -411,16 +440,18 @@
 
 .role-section {
   margin-bottom: 2rem;
+  padding: 1rem 0.5rem;
 }
 
-.role-section:last-child {
-  margin-bottom: 0;
+.role-section:first-child {
+  padding-top: 1rem;
 }
 
 .role-title {
   color: #333;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
 .nav-link {
@@ -459,16 +490,30 @@
 }
 
 .description {
-  margin: 0.5rem 0;
+  color: #444;
   line-height: 1.6;
-  color: #5f6368;
+  margin: 0;
+  white-space: pre-line;
 }
 
 .description a {
   color: #1a73e8;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .description a:hover {
+  color: #1557b0;
+  text-decoration: underline;
+}
+
+.company-link {
+  color: #1a73e8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.company-link:hover {
+  color: #1557b0;
   text-decoration: underline;
 }

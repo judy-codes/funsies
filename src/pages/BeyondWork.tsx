@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Projects: React.FC = () => {
+const BeyondWork: React.FC = () => {
   return (
     <div className="page-container">
-      <h1>Projects</h1>
+      <h1>Beyond Work</h1>
       <div className="content">
-        {/* Content will be added later */}
+        {/* Content will be added here */}
       </div>
     </div>
   );
 };
 
-export default Projects; 
+export default BeyondWork; 

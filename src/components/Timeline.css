@@ -1,0 +1,126 @@
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: #ff6b6b;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.timeline-item:nth-child(even) {
+  justify-content: flex-end;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-content {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: calc(45% - 20px);
+  border: 1px solid #eee;
+  transition: transform 0.2s ease;
+}
+
+/* Connecting line from card to dot */
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 1px;
+  background: #ff6b6b;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+  right: -20px;
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+  left: -20px;
+}
+
+/* Dot on the central line */
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: #ff6b6b;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px #ff6b6b;
+}
+
+.timeline-content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+  color: #ff6b6b;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.timeline-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.timeline-description {
+  color: #666;
+  line-height: 1.4;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    justify-content: flex-start;
+  }
+
+  .timeline-content {
+    width: calc(100% - 40px);
+    margin-left: 40px !important;
+  }
+
+  .timeline-item::after {
+    left: 20px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content::before,
+  .timeline-item:nth-child(even) .timeline-content::before {
+    left: -20px;
+  }
+} 

@@ -5,7 +5,8 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Values from './pages/Values';
 import Experience from './pages/Experience';
-import Projects from './pages/Projects';
+import Proud from './pages/Proud';
+import BeyondWork from './pages/BeyondWork';
 import SocialIcons from './components/SocialIcons';
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/values" element={<Values />} />
             <Route path="/experience" element={<Experience />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/proud" element={<Proud />} />
+            <Route path="/beyond-work" element={<BeyondWork />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>

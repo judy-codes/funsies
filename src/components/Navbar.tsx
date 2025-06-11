@@ -20,7 +20,8 @@ const Navbar: React.FC = () => {
       <ul className="navbar-links">
         <li><NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Home</NavLink></li>
         <li><NavLink to="/experience" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Experience</NavLink></li>
-        <li><NavLink to="/projects" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Projects</NavLink></li>
+        <li><NavLink to="/proud" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>What I'm Proud Of</NavLink></li>
+        <li><NavLink to="/beyond-work" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Beyond Work</NavLink></li>
         <li><NavLink to="/values" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Values</NavLink></li>
       </ul>
     </nav>
