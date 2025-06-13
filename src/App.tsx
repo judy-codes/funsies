@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import Values from './pages/Values';
 import Experience from './pages/Experience';
 import Proud from './pages/Proud';
 import BeyondWork from './pages/BeyondWork';
-import SocialIcons from './components/SocialIcons';
+import SocialIcons from './components/SocialIcons/SocialIcons';
 
 function App() {
   return (
