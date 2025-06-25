@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/funsies/static/css/main.ce093254.css",
-    "main.js": "/funsies/static/js/main.26e106a6.js",
+    "main.js": "/funsies/static/js/main.d68c0207.js",
     "static/media/powerlifting-korea.jpg": "/funsies/static/media/powerlifting-korea.53de827a7f3a8ee6143f.jpg",
     "static/media/table-bostonian-beans.jpg": "/funsies/static/media/table-bostonian-beans.d4c7b963bd38e266c9dc.jpg",
     "static/media/pottery-beach-glaze.jpg": "/funsies/static/media/pottery-beach-glaze.f54fbe176b4b0df92700.jpg",
     "index.html": "/funsies/index.html",
     "main.ce093254.css.map": "/funsies/static/css/main.ce093254.css.map",
-    "main.26e106a6.js.map": "/funsies/static/js/main.26e106a6.js.map"
+    "main.d68c0207.js.map": "/funsies/static/js/main.d68c0207.js.map"
   },
   "entrypoints": [
     "static/css/main.ce093254.css",
-    "static/js/main.26e106a6.js"
+    "static/js/main.d68c0207.js"
   ]
 }
