@@ -1,0 +1,20 @@
+name: AI Judy
+
+on:
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  simple:
+    runs-on: ubuntu-latest
+    
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Echo environment variable
+      run: |
+        echo "OpenAI API key is available as OPENAI_API_KEY"
+        echo "You can now use this in your scripts" 

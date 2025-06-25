@@ -14,7 +14,6 @@ function App() {
     <Router basename="/funsies">
       <div className="App">
         <Navbar />
-        <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/values" element={<Values />} />
@@ -23,7 +22,6 @@ function App() {
             <Route path="/beyond-work" element={<BeyondWork />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
-        </main>
         <SocialIcons />
       </div>
     </Router>

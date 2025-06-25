@@ -11,7 +11,11 @@
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.2",
     "react-scripts": "^5.0.1",
-    "typescript": "^3.9.10"
+    "typescript": "^3.9.10",
+    "openai": "^4.28.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -19,7 +23,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "ai-judy": "node scripts/ai-judy.js",
+    "test-ai-judy": "node scripts/test-ai-judy.js",
+    "server": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run start\""
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "concurrently": "^8.2.2"
   }
 }
